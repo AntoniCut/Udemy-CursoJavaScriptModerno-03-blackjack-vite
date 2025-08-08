@@ -1,0 +1,172 @@
+/*
+    --------------------------------------------------------------------------------
+    ----------  /udemy.antonydev.tech/  --------------------------------------------
+    ----------  /curso-javascript-moderno-guia-para-dominar-el-lenguaje/  ----------
+    ----------  /src/  -------------------------------------------------------------
+    ----------  /style.css  --------------------------------------------------------
+    --------------------------------------------------------------------------------
+*/
+
+
+html,
+body {
+    margin: 0;
+    background-color: #2f4f30;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+.titulo {
+    padding: 2rem;
+    text-align: center;
+    background-color: black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.titulo > h1 {
+    color: white;
+    background-color: black;
+    font-size: 5rem;
+}
+
+.blackjack {
+    max-width: 102.4rem;
+    width: 98%;
+    margin: 5rem auto;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #476448;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btns__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    width: 15rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.jugador-container {
+    width: 90%;
+    min-height: 30rem;
+}
+
+.title-jugador {
+    font-size: 3rem;
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cartas-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    padding-left: 7rem;
+}
+
+.carta {
+    width: 10rem;
+    height: auto;
+    margin-left: -5rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width: 600px) {
+
+    .title-jugador {
+        font-size: 2rem;
+    }
+
+    .btns__container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .titulo > h1 {
+        font-size: 3rem;
+    }
+
+    .title-jugador {
+        font-size: 2.5rem;
+    }
+
+    .carta {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .blackjack {
+        padding: 1rem;
+    }
+
+    .title-jugador {
+        font-size: 1.5rem;
+    }
+
+    .btns__container {
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .jugador-container {
+        margin-left: 5rem;
+    }
+
+    .cartas-container {
+        padding-left: 2rem;
+    }
+
+}
+
+.gradiente {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(125% 125% at 50% 10%, #fff 40%, #6366f1 100%);
+}
