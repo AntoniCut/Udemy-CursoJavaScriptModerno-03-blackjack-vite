@@ -14,7 +14,7 @@ export default defineConfig({
     //base: ''
 
     //  -----  github Pages  -----
-    base: 'Udemy-CursoJavaScriptModerno-03-blackjack-vite',
+    base: '/Udemy-CursoJavaScriptModerno-03-blackjack-vite/',
 
   resolve: {
         alias: {
